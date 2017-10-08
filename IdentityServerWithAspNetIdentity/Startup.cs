@@ -62,30 +62,6 @@ namespace IdentityServerWithAspNetIdentity
                     options.EnableTokenCleanup = true;
                     options.TokenCleanupInterval = 30;
                 });
-
-            // configure identity server with in-memory stores, keys, clients and scopes
-            //services.AddIdentityServer()
-            //    .AddDeveloperSigningCredential()
-            //    .AddInMemoryPersistedGrants()
-            //    // this adds the config data from DB (clients, resources)
-            //    .AddConfigurationStore(options =>
-            //    {
-            //        options.ConfigureDbContext = builder =>
-            //            builder.UseSqlServer(connectionString,
-            //                sql => sql.MigrationsAssembly(migrationsAssembly));
-            //    })
-            //    // this adds the operational data from DB (codes, tokens, consents)
-            //    .AddOperationalStore(options =>
-            //    {
-            //        options.ConfigureDbContext = builder =>
-            //            builder.UseSqlServer(connectionString,
-            //                sql => sql.MigrationsAssembly(migrationsAssembly));
-
-            //        // this enables automatic token cleanup. this is optional.
-            //        options.EnableTokenCleanup = true;
-            //        options.TokenCleanupInterval = 30;
-            //    })
-            //    .AddAspNetIdentity<ApplicationUser>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
